@@ -142,10 +142,10 @@ void renderRecursive (BSHNode* arbre) {
 }
 
 void drawScene () {
-    renderRecursive(bshnode);
-    //drawGL(bshnode);
-    //drawGL(bshnode->getLeftChild());
-    //drawGL(bshnode->getRightChild());
+    //renderRecursive(bshnode);
+    drawGL(bshnode);
+    drawGL(bshnode->getLeftChild());
+    drawGL(bshnode->getRightChild());
     glBegin (GL_TRIANGLES);
     for (unsigned int i = 0; i < mesh.T.size (); i++) 
         for (unsigned int j = 0; j < 3; j++) {

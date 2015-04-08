@@ -15,8 +15,8 @@ class BSHNode {
 	BSHNode * getLeftChild() { return leftChild; }
 	BSHNode * getRightChild() { return rightChild; }
         Mesh getMeshDebug() { return meshDebug; }
-	bool left() { return leftE; }
-	bool right() { return rightE; }
+	bool left() { return left; }
+	bool right() { return right; }
     private:
         Vec3f position;
         Vec3f normal;
@@ -25,8 +25,8 @@ class BSHNode {
         BSHNode * leftChild;
         BSHNode * rightChild;
         Mesh meshDebug;
-	bool leftE;
-	bool rightE;
+	bool left;
+	bool right
 };
 
 #endif // BSHNODE_H
